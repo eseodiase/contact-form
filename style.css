@@ -3,6 +3,7 @@
     --primary-a-color: hsl(228, 45%, 44%);
     --bg-color: hsl(148, 38%, 91%);
     --container-bg-color: hsl(0, 0%, 100%);
+    --container-box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.0477);
     --container-margin: 0.625rem;
     --container-padding: 1.5625rem;
     --border-line: 1px solid hsl(187, 24%, 22%);
@@ -41,6 +42,9 @@
       margin: var(--container-margin);
       padding: var(--container-padding);
       text-align: center;
+      box-shadow: var(--container-box-shadow);
+      -webkit-box-shadow: var(--container-box-shadow);
+      -moz-box-shadow: var(--container-box-shadow);
     }
     label, 
     .fname-label,
@@ -75,6 +79,13 @@
       width: 31.25rem;
       background: var(--button-bg);
       color: var(--bg-color);
+    }
+    input[type=text],
+    input[type=email],
+    .query_border,
+    button{
+      height: 2.6rem;
+      border-radius: 8px;
     }
     .attribution { 
       font-size: 11px; 
