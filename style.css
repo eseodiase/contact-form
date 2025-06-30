@@ -45,13 +45,13 @@
     .fname-label,
     .lname-label,
     .email-label,
-    .message-label{
+    .message-label,
+    .checkbox{
       font-weight: 400;
       text-align: var(--left-align);
     }
     .form-names, .query_border{
       display: inline-block;
-      text-align: var(--left-align);
     }
     #fname, #lname{
       width: 15.22rem;
