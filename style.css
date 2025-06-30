@@ -16,6 +16,7 @@
     --button-bg: hsl(169, 82%, 27%);
     --button-color: hsl(0, 0%, 100%);
     --mobile-input-width: 98%;
+    --asteridk-size: 1rem;
   }
   html, .body{
       margin: 0;
@@ -49,6 +50,9 @@
       -webkit-box-shadow: var(--container-box-shadow);
       -moz-box-shadow: var(--container-box-shadow);
       font-size: var(--body-paragraph);
+    }
+    .container .asterisk{
+      font-size: var(--asterisk-size);
     }
     label, 
     .fname-label,
