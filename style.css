@@ -52,6 +52,7 @@
     }
     .form-names, .query_border{
       display: inline-block;
+      text-align: var(--left-align);
     }
     #fname, #lname{
       width: 15.22rem;
@@ -83,3 +84,26 @@
       color: var(--primary-a-color);
     }
   
+  @media (max-width: 789px){
+      #fname, #lname{
+      width: 240px;
+    }
+    #email{
+      width: 240px;
+    }
+    .query-heading{
+      text-align: var(--left-align);
+    }
+    .query_border{
+      border: var(--border-line);
+      width: 240px;
+    }
+    textarea{
+      width: 240px;
+    }
+    button{
+      width: 240px;
+      background: var(--button-bg);
+      color: var(--bg-color);
+    }
+  }
