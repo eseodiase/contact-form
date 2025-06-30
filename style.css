@@ -1,14 +1,16 @@
 /* CSS Variables */
   :root{
     --primary-a-color: hsl(228, 45%, 44%);
+    --body-paragraph: 1rem;
     --bg-color: hsl(148, 38%, 91%);
     --container-bg-color: hsl(0, 0%, 100%);
     --container-box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.0477);
     --container-margin: 0.625rem;
     --container-padding: 1.5625rem;
     --border-line: 1px solid hsl(186, 15%, 59%);
+    --light-grey: hsl(186, 15%, 59%);
     --dark-grey: hsl(187, 24%, 22%);
-    --font-karla: Karla;
+    --font-karla: 'Karla' Sans-Serif;
     --left-align: left;
     --hover-color: 0.3px solid hsl(169, 82%, 27%);
     --button-bg: hsl(169, 82%, 27%);
@@ -46,14 +48,17 @@
       box-shadow: var(--container-box-shadow);
       -webkit-box-shadow: var(--container-box-shadow);
       -moz-box-shadow: var(--container-box-shadow);
+      font-size: var(--body-paragraph);
     }
     label, 
     .fname-label,
     .lname-label,
     .email-label,
     .message-label,
-    .checkbox{
+    .checkbox,
+    .container p{
       font-weight: 400;
+      color: var(--dark-grey);
       text-align: var(--left-align);
     }
     .form-names, .query_border{
@@ -115,7 +120,6 @@
       outline: var(--hover-color);
     }
     .attribution { 
-      font-size: 11px; 
       text-align: center;
       display: none;
     }
