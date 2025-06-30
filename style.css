@@ -9,6 +9,8 @@
     --dark-grey: hsl(187, 24%, 22%);
     --font-karla: Karla;
     --left-align: left;
+    --button-bg: hsl(169, 82%, 27%);
+    --button-color: hsl(0, 0%, 100%);
   }
   html, .body{
       margin: 0;
@@ -39,31 +41,38 @@
       padding: var(--container-padding);
       text-align: center;
     }
-    label{
+    label, 
+    .fname-label,
+    .lname-label,
+    .email-label,
+    .message-label{
       font-weight: 400;
+      text-align: var(--left-align);
     }
     .form-names, .query_border{
       display: inline-block;
       text-align: var(--left-align);
     }
     #fname, #lname{
-      width: 15rem;
+      width: 15.22rem;
     }
     #email{
-      width: 30rem;
+      width: 31.25rem;
     }
     .query-heading{
       text-align: var(--left-align);
     }
     .query_border{
       border: var(--border-line);
-      width: 15rem;
+      width: 15.625rem;
     }
     textarea{
-      width: 30rem;
+      width: 31.25rem;
     }
     button{
-      
+      width: 31.25rem;
+      background: var(--button-bg);
+      color: var(--bg-color);
     }
     .attribution { 
       font-size: 11px; 
