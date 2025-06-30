@@ -85,6 +85,7 @@
       border: var(--border-line);
       width: 14.16rem;
       padding-inline-start: 1.44rem;
+      line-height: 280%;
     }
     textarea{
       border: var(--border-line);
