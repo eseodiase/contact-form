@@ -11,6 +11,7 @@
     --left-align: left;
     --button-bg: hsl(169, 82%, 27%);
     --button-color: hsl(0, 0%, 100%);
+    --mobile-input-width: 100%;
   }
   html, .body{
       margin: 0;
@@ -85,28 +86,21 @@
     }
   
   @media (max-width: 789px){
-   .form-names, .query_border{
+   .form-names, 
+   .query_border{
      display: block;
+     text-align: center;
    }
-      #fname, #lname{
-      width: 240px;
-    }
-    #email{
-      width: 240px;
-    }
-    .query-heading{
-      text-align: var(--left-align);
+      #fname, 
+      #lname, 
+      #email,
+      textarea,
+      button{
+      width: var(--mobile-input-width);
     }
     .query_border{
       border: var(--border-line);
-      width: 240px;
-    }
-    textarea{
-      width: 240px;
-    }
-    button{
-      width: 240px;
-      background: var(--button-bg);
-      color: var(--bg-color);
+      width: var(--mobile-input-width);
+      text-align: var(--left-align);
     }
   }
