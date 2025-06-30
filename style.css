@@ -29,7 +29,7 @@
       color: var(--dark-grey);
     }
     .container{
-      max-width: 31.25rem;
+      max-width: 46.875rem;
       max-height: 56.24rem;
       background: var(--container-bg-color);
       border-radius: 20px;
@@ -38,6 +38,9 @@
     }
     label{
       font-weight: 400;
+    }
+    .form-names{
+      display: inline-block;
     }
     .attribution { 
       font-size: 11px; 

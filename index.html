@@ -16,13 +16,21 @@
   <h1 class="heading">Contact Us</h1>
   <form class="container" action="#" method="post">
     <h2 class="subheading"> Contact Us</h2>
+    <section class="form-names">
     <label for="fname">First Name</label>
+    <br>
       <input type="text" id="fname" name="first_name" required>
+    </section>
     
+    <section class="form-names">
     <label for="lname">Last Name</label>
+    <br>
       <input type="text" id="lname" name="last_name" required>
-      
+    </section>
+    
+    <br>  
     <label for="email">Email</label>
+    <br>
       <input type="email" id="email" name="email" required>
     
     <p class="query-heading">Query Type</p>  
@@ -38,9 +46,11 @@
     
     <p><label for="message">Message</label></p>
     <textarea id="message" name="Message" cols="30" rows="10" required></textarea>
+    <br>
     
     <input type="checkbox" id="check" name="Consent" value="I consent to being contacted by the team" required>
     <label for="check">I consent to being contacted by the team</label>
+    <br>
     
     <button type="submit">Submit</button>
 
