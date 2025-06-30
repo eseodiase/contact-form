@@ -8,6 +8,7 @@
     --border-line: 1px solid hsl(187, 24%, 22%);
     --dark-grey: hsl(187, 24%, 22%);
     --font-karla: Karla;
+    --left-align: left;
   }
   html, .body{
       margin: 0;
@@ -27,6 +28,7 @@
     .wrapper h2{
       font-weight: 700;
       color: var(--dark-grey);
+      text-align: var(--left-align);
     }
     .container{
       max-width: 46.875rem;
@@ -35,22 +37,40 @@
       border-radius: 20px;
       margin: var(--container-margin);
       padding: var(--container-padding);
+      text-align: center;
     }
     label{
       font-weight: 400;
     }
-    .form-names{
+    .form-names, .query_border{
       display: inline-block;
+      text-align: var(--left-align);
+    }
+    #fname, #lname{
+      width: 15rem;
+    }
+    #email{
+      width: 30rem;
+    }
+    .query-heading{
+      text-align: var(--left-align);
+    }
+    .query_border{
+      border: var(--border-line);
+      width: 15rem;
+    }
+    textarea{
+      width: 30rem;
+    }
+    button{
+      
     }
     .attribution { 
       font-size: 11px; 
-      text-align: center; 
+      text-align: center;
       display: none;
     }
     .attribution a { 
       color: var(--primary-a-color);
-    }
-    .query_border{
-      border: var(--border-line);
     }
   
