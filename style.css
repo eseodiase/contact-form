@@ -1,0 +1,53 @@
+/* CSS Variables */
+  :root{
+    --primary-a-color: hsl(228, 45%, 44%);
+    --bg-color: hsl(148, 38%, 91%);
+    --container-bg-color: hsl(0, 0%, 100%);
+    --container-margin: 0.625rem;
+    --container-padding: 1.5625rem;
+    --border-line: 1px solid hsl(187, 24%, 22%);
+    --dark-grey: hsl(187, 24%, 22%);
+    --font-karla: Karla;
+  }
+  html, .body{
+      margin: 0;
+      padding: 0;
+      background: var(--bg-color);
+      font-family: var(--font-karla);
+    }
+    .wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .wrapper h1{
+      display: none;
+    }
+    .wrapper h2{
+      font-weight: 700;
+      color: var(--dark-grey);
+    }
+    .container{
+      max-width: 31.25rem;
+      max-height: 56.24rem;
+      background: var(--container-bg-color);
+      border-radius: 20px;
+      margin: var(--container-margin);
+      padding: var(--container-padding);
+    }
+    label{
+      font-weight: 400;
+    }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      display: none;
+    }
+    .attribution a { 
+      color: var(--primary-a-color);
+    }
+    .query_border{
+      border: var(--border-line);
+    }
+  
