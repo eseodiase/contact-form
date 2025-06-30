@@ -85,6 +85,9 @@
     }
   
   @media (max-width: 789px){
+   .form-names, .query_border{
+     display: block;
+   }
       #fname, #lname{
       width: 240px;
     }
