@@ -10,7 +10,7 @@
     --dark-grey: hsl(187, 24%, 22%);
     --font-karla: Karla;
     --left-align: left;
-    --hover-color: 1px solid hsl(169, 82%, 27%);
+    --hover-color: 0.3px solid hsl(169, 82%, 27%);
     --button-bg: hsl(169, 82%, 27%);
     --button-color: hsl(0, 0%, 100%);
     --mobile-input-width: 98%;
@@ -82,6 +82,7 @@
       border-radius: 8px;
       outline: none;
       cursor: pointer;
+      height: 6.25rem;
     }
     .checkbox{
       margin-block-start: 1.875rem;
@@ -142,5 +143,8 @@
       margin-block-end: 1.25rem;
       text-align: var(--left-align);
       cursor: none;
+    }
+    textarea{
+      height: 12.5rem;
     }
   }
