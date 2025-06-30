@@ -125,6 +125,12 @@
     textarea:hover{
       outline: var(--hover-color);
     }
+    input[type=text]:hover,
+    input[type=email]:hover,
+    .query_border:hover,
+    textarea:hover {
+    background: var(--bg-color);
+    }
     .attribution { 
       text-align: center;
       display: none;
