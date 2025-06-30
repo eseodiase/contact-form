@@ -7,12 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Contact form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,20 +17,24 @@
   <form class="container" action="#" method="post">
     <h2 class="subheading"> Contact Us</h2>
     <label for="fname">First Name</label>
-      <input type="text" id="fname" name="First_Name" required>
+      <input type="text" id="fname" name="first_name" required>
     
     <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="Last_Name" required>
+      <input type="text" id="lname" name="last_name" required>
       
     <label for="email">Email</label>
-      <input type="email" id="email" name="Email" required>
+      <input type="email" id="email" name="email" required>
     
     <p class="query-heading">Query Type</p>  
-    <input type="radio" id="general" name="Query_Type" value="General Enquiry" required>
+    <section class="query_border">
+    <input type="radio" id="general" name="query_type" value="General Enquiry" required>
     <label for="general">General Enquiry</label>
-
-    <input type="radio" id="support" name="Query_Type" value="Support Request" required>
+    </section>
+    
+    <section class="query_border">
+    <input type="radio" id="support" name="query_type" value="Support Request" required>
     <label for="support">Support Request</label>
+    </section>
     
     <p><label for="message">Message</label></p>
     <textarea id="message" name="Message" cols="30" rows="10" required></textarea>
@@ -45,9 +45,11 @@
     <button type="submit">Submit</button>
 
   
-  <!-- for js if checkbox is not clicked/checked:
-  To submit this form, please consent to being contacted
+  <!-- Please select a query type
 
+  
+  for js if checkbox is not clicked/checked:
+  To submit this form, please consent to being contacted
 
 
   Message Sent!
