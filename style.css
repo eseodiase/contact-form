@@ -53,6 +53,7 @@
     }
     .container .asterisk{
       font-size: var(--asterisk-size);
+      color: var(--button-bg);
     }
     label, 
     .fname-label,
