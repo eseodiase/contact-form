@@ -16,37 +16,49 @@
 </head>
 <body>
 
-  Contact Us
+<main class="wrapper">
+  <h1 class="heading">Contact Us</h1>
+  <form class="container" action="#" method="post">
+    <h2 class="subheading"> Contact Us</h2>
+    <label for="fname">First Name</label>
+      <input type="text" id="fname" name="First_Name" required>
+    
+    <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="Last_Name" required>
+      
+    <label for="email">Email</label>
+      <input type="email" id="email" name="Email" required>
+    
+    <p class="query-heading">Query Type</p>  
+    <input type="radio" id="general" name="Query_Type" value="General Enquiry" required>
+    <label for="general">General Enquiry</label>
 
-  First Name
-  This field is required
+    <input type="radio" id="support" name="Query_Type" value="Support Request" required>
+    <label for="support">Support Request</label>
+    
+    <p><label for="message">Message</label></p>
+    <textarea id="message" name="Message" cols="30" rows="10" required></textarea>
+    
+    <input type="checkbox" id="check" name="Consent" value="I consent to being contacted by the team" required>
+    <label for="check">I consent to being contacted by the team</label>
+    
+    <button type="submit">Submit</button>
 
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
+  
+  <!-- for js if checkbox is not clicked/checked:
   To submit this form, please consent to being contacted
 
-  Submit
+
 
   Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+  Thanks for completing the form. We ll be in touch soon! -->
+  </form>
   
-  <div class="attribution">
+  <article class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </article>
+  </main>
+  
 </body>
 </html>
