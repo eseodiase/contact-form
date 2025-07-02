@@ -16,7 +16,7 @@
     --button-bg: hsl(169, 82%, 27%);
     --button-color: hsl(0, 0%, 100%);
     --mobile-input-width: 98%;
-    --asteridk-size: 1rem;
+    --asterisk-size: 0.65rem;
   }
   html, .body{
       margin: 0;
@@ -40,7 +40,7 @@
     }
     .container{
       max-width: 46.875rem;
-      max-height: 56.24rem;
+      max-height: 75rem;
       text-align: center;
       background: var(--container-bg-color);
       border-radius: 20px;
@@ -54,6 +54,7 @@
     .container .asterisk{
       font-size: var(--asterisk-size);
       color: var(--button-bg);
+      margin-inline-start: 0.2rem;
     }
     label, 
     .fname-label,
@@ -85,7 +86,7 @@
       border: var(--border-line);
       width: 14.16rem;
       padding-inline-start: 1.44rem;
-      line-height: 280%;
+      line-height: 300%;
     }
     textarea{
       border: var(--border-line);
@@ -100,6 +101,9 @@
       margin-block-end: 1.875rem;
       cursor: pointer;
     }
+    .checkbox label {
+      margin-inline-start: 0.875rem;
+    }
     button{
       width: 31.25rem;
       background: var(--button-bg);
@@ -107,15 +111,17 @@
       border: none;
       cursor: pointer;
       font-weight: 700;
+      height: 3.44rem;
+      border-radius: 8px;
+      outline: none;
     }
     input{
       cursor: pointer;
     }
     input[type=text],
     input[type=email],
-    .query_border,
-    button{
-      height: 2.6rem;
+    .query_border{
+      height: 3rem;
       border-radius: 8px;
       outline: none;
     }
@@ -153,6 +159,9 @@
       width: var(--mobile-input-width);
       cursor: none;
     }
+    input{
+      cursor: none;
+    }
     .query_border{
       border: var(--border-line);
       width: 91.2%;
@@ -161,6 +170,9 @@
       cursor: none;
     }
     textarea{
-      height: 12.5rem;
+      height: 15.625rem;
+    }
+    .checkbox{
+      display: flex;
     }
   }
