@@ -172,6 +172,11 @@
     background-repeat: no-repeat;
   }
   
+  #checkbox_error{
+    margin-block-start: -0.9375rem;
+    margin-block-end: 1.875rem;
+  }
+  
     button{
       width: 31.25rem;
       background: var(--button-bg);
@@ -228,6 +233,12 @@
     }
   
   @media (max-width: 789px){
+    
+    .wrapper h2{
+      margin-block-start: 0rem;
+      margin-block-end: 2.5rem;
+    }
+    
    .form-names, 
    .query_border{
      display: block;
@@ -264,9 +275,9 @@
       cursor: none;
     }
     
-  .checkbox input {
+    .checkbox input {
       margin-block-start: 0.9rem;
-  }
+    }
     
     .checkbox-icon {
       margin-block-start: 0.625rem;

@@ -27,6 +27,7 @@
     <b class="asterisk">&#x2a;</b>
     </p>
       <input type="text" id="fname" name="first_name" required>
+      <p id="fname_error"></p>
     </section>
     
     <section class="form-names">
@@ -34,6 +35,7 @@
     <b class="asterisk">&#x2a;</b>
     </p>
       <input type="text" id="lname" name="last_name" required>
+      <p id="lname_error"></p>
     </section>
     
     <section class="form-email">
@@ -41,21 +43,25 @@
     <b class="asterisk">&#x2a;</b>
     </p>
       <input type="email" id="email" name="email" required>
+      <p id="email_error"></p>
     </section>
     
+    <section>
     <p class="query-heading">Query Type
      <b class="asterisk">&#x2a;</b>
      </p>  
-    <section class="query_border">
+    <div class="query_border">
     <input type="radio" id="general" name="query_type" value="General Enquiry" required>
     <span class="radio-icon"></span>
     <label for="general">General Enquiry</label>
-    </section>
+    </div>
     
-    <section class="query_border">
+    <div class="query_border">
     <input type="radio" id="support" name="query_type" value="Support Request" required>
     <span class="radio-icon"></span>
     <label for="support">Support Request</label>
+    </div>
+    <p id="query_type_error">txt</p>
     </section>
     
     <section class="form-message">
@@ -63,12 +69,16 @@
     <b class="asterisk">&#x2a;</b>
     </p>
     <textarea id="message" name="Message" cols="30" rows="10" required></textarea>
+    <p id="message_error">txt</p>
     </section>
     
-    <section class="checkbox">
+    <section class="check-section">
+    <div class="checkbox">
     <input type="checkbox" id="check" name="Consent" value="I consent to being contacted by the team" required>
     <span class="checkbox-icon"></span>
-    <label for="check">I consent to being contacted by the team <b class="asterisk">&#x2a;</b></label>
+    <label for="check">I consent to being contacted by the team <b class="asterisk">&#x2a;</b></label> 
+    </div>
+    <p id="checkbox_error">text</p>
     </section>
     
     <button type="submit" id="submit">Submit</button>
