@@ -18,6 +18,7 @@
     --mobile-input-width: 98%;
     --asterisk-size: 0.65rem;
     --radio-label-height: 2.8125rem;
+    --error-color: hsl(0, 66%, 54%);
   }
   
   html, .body{
@@ -221,6 +222,15 @@
     .query_border:hover,
     textarea:hover {
     background: var(--bg-color);
+    }
+    
+    #fname_error,
+    #lname_error,
+    #email_error,
+    #query_type_error,
+    #message_error,
+    #checkbox_error{
+      color: var(--error-color);
     }
     
     .attribution { 
