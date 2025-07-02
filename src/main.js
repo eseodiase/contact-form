@@ -1,22 +1,15 @@
-function contactForm() {
-  // variable
-  const fn = document.getElementById("fname");
-  const ln = document.getElementById("lname");
-  const em = document.getElementById("email");
-  const gnr = document.getElementById("general");
-  const sp = document.getElementById("support");
-  const ms = document.getElementById("message");
-  const ck = document.getElementById("check");
-  const sum = document.getElementById("submit");
-  const fm = document.getElementById("form");
-  
-  //
-  sum.addEventListener('click', () => {
-    if (fn.value.trim() === "") {
-      document.getElementById('fname_error').innerHTML = "This field is required";
-    } else {
-      document.getElementById('fname_error').innerHTML = ""; // clear error
-    }
-  });
-  }
-  contactForm();
+const nameInput = document.getElementById("name");
+
+nameInput.oninvalid = function () {
+  this.setCustomValidity("Please fill in your first name!");
+};
+
+nameInput.oninput = function () {
+  this.setCustomValidity(""); // Reset custom message on user input
+};
+
+document.getElementById("form").addEventListener("submit", function (e) {
+  // You can optionally do more validation here
+  alert("Form submitted!");
+   // Remove this if you want the form to actually submit
+});
