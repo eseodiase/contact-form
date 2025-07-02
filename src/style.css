@@ -127,7 +127,7 @@
  
     .query_border input:checked ~ .radio-icon {
     border: none;
-    background-image: url("./icon-radio-selected.svg");
+    background-image: url("./challenge_files/icon-radio-selected.svg");
     background-repeat: no-repeat;
     background-size: cover;
     }
@@ -169,7 +169,7 @@
   
    .checkbox input:checked ~ .checkbox-icon {
     border: none;
-    background-image: url("./icon-checkbox-check.svg");
+    background-image: url("./challenge_files/icon-checkbox-check.svg");
     background-repeat: no-repeat;
   }
   
