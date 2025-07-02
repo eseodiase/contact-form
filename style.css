@@ -18,26 +18,31 @@
     --mobile-input-width: 98%;
     --asterisk-size: 0.65rem;
   }
+  
   html, .body{
       margin: 0;
       padding: 0;
       background: var(--bg-color);
       font-family: var(--font-karla);
     }
+    
     .wrapper{
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
     }
+    
     .wrapper h1{
       display: none;
     }
+    
     .wrapper h2{
       font-weight: 700;
       color: var(--dark-grey);
       text-align: var(--left-align);
     }
+    
     .container{
       max-width: 46.875rem;
       max-height: 75rem;
@@ -51,11 +56,13 @@
       -moz-box-shadow: var(--container-box-shadow);
       font-size: var(--body-paragraph);
     }
+    
     .container .asterisk{
       font-size: var(--asterisk-size);
       color: var(--button-bg);
       margin-inline-start: 0.2rem;
     }
+    
     label, 
     .fname-label,
     .lname-label,
@@ -67,27 +74,32 @@
       color: var(--dark-grey);
       text-align: var(--left-align);
     }
+    
     .form-names, .query_border{
       display: inline-block;
       text-align: var(--left-align);
     }
+    
     #fname, #lname{
       border: var(--border-line);
       width: 15.22rem;
     }
+    
     #email{
       border: var(--border-line);
       width: 31.25rem;
     }
+    
     .query-heading{
       text-align: var(--left-align);
     }
+    
     .query_border{
       border: var(--border-line);
       width: 14.16rem;
       padding-inline-start: 1.44rem;
-      line-height: 300%;
     }
+    
     textarea{
       border: var(--border-line);
       width: 31.25rem;
@@ -96,14 +108,38 @@
       cursor: pointer;
       height: 6.25rem;
     }
+    
     .checkbox{
       margin-block-start: 1.875rem;
       margin-block-end: 1.875rem;
       cursor: pointer;
     }
+    
     .checkbox label {
-      margin-inline-start: 0.875rem;
+      margin-inline-start: 1.875rem;
     }
+    
+    .checkbox input {
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+  }
+  
+   .checkbox-icon {
+    height: 1.125rem;
+    width: 1.12rem;
+    border-radius: 0.1rem;
+    position: absolute;
+    background: transparent;
+    border: var(--border-line);
+  }
+  
+   .checkbox input:checked ~ .checkbox-icon {
+    border: none;
+    background-image: url("./icon-checkbox-check.svg");
+    background-repeat: no-repeat;
+  }
+  
     button{
       width: 31.25rem;
       background: var(--button-bg);
@@ -115,9 +151,11 @@
       border-radius: 8px;
       outline: none;
     }
+    
     input{
       cursor: pointer;
     }
+    
     input[type=text],
     input[type=email],
     .query_border{
@@ -125,22 +163,30 @@
       border-radius: 8px;
       outline: none;
     }
+    
+    input[type=radio]{
+      margin-block-start: 0.875rem;
+    }
+    
     input[type=text]:hover,
     input[type=email]:hover,
     .query_border:hover,
     textarea:hover{
       outline: var(--hover-color);
     }
+    
     input[type=text]:hover,
     input[type=email]:hover,
     .query_border:hover,
     textarea:hover {
     background: var(--bg-color);
     }
+    
     .attribution { 
       text-align: center;
       display: none;
     }
+    
     .attribution a { 
       color: var(--primary-a-color);
     }
@@ -151,6 +197,7 @@
      display: block;
      text-align: center;
    }
+   
       #fname, 
       #lname, 
       #email,
@@ -159,9 +206,11 @@
       width: var(--mobile-input-width);
       cursor: none;
     }
+    
     input{
       cursor: none;
     }
+    
     .query_border{
       border: var(--border-line);
       width: 91.2%;
@@ -169,10 +218,22 @@
       text-align: var(--left-align);
       cursor: none;
     }
+    
     textarea{
       height: 15.625rem;
     }
+    
     .checkbox{
       display: flex;
+      cursor: none;
     }
+    
+    .checkbox-icon {
+      margin-block-start: 0.625rem;
+    }
+    
+    .checkbox input{
+      margin-block-start: 0.9rem;
+    }
+    
   }
