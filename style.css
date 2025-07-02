@@ -17,6 +17,7 @@
     --button-color: hsl(0, 0%, 100%);
     --mobile-input-width: 98%;
     --asterisk-size: 0.65rem;
+    --radio-label-height: 2.8125rem;
   }
   
   html, .body{
@@ -100,6 +101,36 @@
       padding-inline-start: 1.44rem;
     }
     
+    /*radio icon start*/
+    .query_border input {
+      opacity: 0;
+      position: absolute;
+      z-index: 999;
+    }
+ 
+    .query_border .radio-icon {
+      height: 1.125rem;
+      width: 1.12rem;
+      border-radius: 50%;
+      margin-inline-start: 0.1875rem;
+      margin-block-start: 0.75rem;
+      position: absolute;
+      background: transparent;
+      border: var(--border-line);
+    }
+    
+    .query_border label {
+      margin-inline-start: 1.875rem;
+      line-height: var(--radio-label-height);
+    }
+ 
+    .query_border input:checked ~ .radio-icon {
+    border: none;
+    background-image: url("./icon-radio-selected.svg");
+    background-repeat: no-repeat;
+    }
+    /*radio icon end*/
+    
     textarea{
       border: var(--border-line);
       width: 31.25rem;
@@ -125,7 +156,7 @@
     z-index: 999;
   }
   
-   .checkbox-icon {
+    .checkbox-icon {
     height: 1.125rem;
     width: 1.12rem;
     border-radius: 0.1rem;
@@ -228,12 +259,12 @@
       cursor: none;
     }
     
+  .checkbox input {
+      margin-block-start: 0.9rem;
+  }
+    
     .checkbox-icon {
       margin-block-start: 0.625rem;
-    }
-    
-    .checkbox input{
-      margin-block-start: 0.9rem;
     }
     
   }
