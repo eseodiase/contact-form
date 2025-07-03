@@ -19,6 +19,8 @@
     --asterisk-size: 0.65rem;
     --radio-label-height: 2.8125rem;
     --error-color: hsl(0, 66%, 54%);
+    --success-font-1: 0.875rem;
+    --success-font-2: 0.75rem;
   }
   
   html, .body{
@@ -177,6 +179,7 @@
   #checkbox_error{
     margin-block-start: -0.56rem;
     margin-block-end: 1.875rem;
+    letter-spacing: 0.0125em;
   }
   
     button{
@@ -240,21 +243,38 @@
     }    
     
     #success{
-      background: var(--dark-grey);
-      border-radius: 8px;
-      top: -6.25rem;
-      width: 22rem;
+      top: -6.8rem;
       height: 6.25rem;
-      text-align: center;
+      width: 100%;
+      left: 0;
       position: absolute;
-      display: none;
+      display: non;
     }
     
-    #success p{
-      color: var(--button-color);
-      padding-inline-start: 18px;
-      padding-inline-end: 18px;
+    #success .success_inner{
+      margin-inline-start: 6.5rem;
+      margin-inline-end: 6.5rem;
+      padding-inline: 1.25rem;
+      padding-block: 1.25rem;
+      border-radius: 8px;
+      text-align: center;
+      background: var(--dark-grey);
     }
+    
+    #success .success_inner p{
+     color: var(--button-color);
+     letter-spacing: 0.0125em;
+    }
+    
+    #success .success_inner .success-text-1{
+      font-weight: 700;
+      font-size: var(--success-font-1);
+    }
+    
+    #success .success_inner .success-text-2 {
+      font-weight: 400;
+      font-size: var(--success-font-2);
+      }
     
     .attribution { 
       text-align: center;
@@ -267,7 +287,7 @@
   
   @media (max-width: 789px){
     .wrapper {
-      margin-block-start: 6.25rem;
+      margin-block-start: 7.8rem;
     }
     
     .wrapper h2{
@@ -320,7 +340,12 @@
     }
     
     #success {
-    width: 16rem;
+     top: -7.6rem;
+    }
+    
+    #success .success_inner {
+      margin-inline-start: 3rem;
+      margin-inline-end: 3rem;
     }
     
   }
