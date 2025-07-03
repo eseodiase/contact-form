@@ -132,7 +132,7 @@
     border: none;
     background-image: url("./challenge_files/icon-radio-selected.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     }
     /*radio icon end*/
     
@@ -233,6 +233,7 @@
       color: var(--error-color);
       margin-block-start: 0rem;
       position: absolute;
+      font-size: var(--success-font-2);
     }
     
     #email_error,
@@ -240,6 +241,7 @@
     #message_error,
     #checkbox_error{
       color: var(--error-color);
+      font-size: var(--success-font-2);
     }    
     
     #success{
@@ -248,7 +250,7 @@
       width: 100%;
       left: 0;
       position: absolute;
-      display: non;
+      display: none;
     }
     
     #success .success_inner{
@@ -275,6 +277,13 @@
       font-weight: 400;
       font-size: var(--success-font-2);
       }
+      
+      #success .success_inner .success-icon{
+        background-image: url('./challenge_files/icon-success-check.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-inline-end: 1.5rem;
+      }
     
     .attribution { 
       text-align: center;
@@ -286,10 +295,6 @@
     }
   
   @media (max-width: 789px){
-    .wrapper {
-      margin-block-start: 7.8rem;
-    }
-    
     .wrapper h2{
       margin-block-start: 0rem;
       margin-block-end: 2.5rem;
