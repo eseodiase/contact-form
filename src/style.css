@@ -47,7 +47,7 @@
     
     .container{
       max-width: 46.875rem;
-      max-height: 75rem;
+      max-height: 85rem;
       text-align: center;
       background: var(--container-bg-color);
       border-radius: 20px;
@@ -174,7 +174,7 @@
   }
   
   #checkbox_error{
-    margin-block-start: -0.9375;
+    margin-block-start: -0.9375rem;
     margin-block-end: 1.875rem;
   }
   
@@ -225,13 +225,18 @@
     }
     
     #fname_error,
-    #lname_error,
+    #lname_error{
+      color: var(--error-color);
+      margin-block-start: 0rem;
+      position: absolute;
+    }
+    
     #email_error,
     #query_type_error,
     #message_error,
     #checkbox_error{
       color: var(--error-color);
-    }
+    }    
     
     .attribution { 
       text-align: center;

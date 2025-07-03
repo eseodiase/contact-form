@@ -1,15 +1,14 @@
-const nameInput = document.getElementById("name");
 
-nameInput.oninvalid = function () {
-  this.setCustomValidity("Please fill in your first name!");
-};
-
-nameInput.oninput = function () {
-  this.setCustomValidity(""); // Reset custom message on user input
-};
-
-document.getElementById("form").addEventListener("submit", function (e) {
-  // You can optionally do more validation here
-  alert("Form submitted!");
-   // Remove this if you want the form to actually submit
-});
+function contactForm() {
+  const sum = document.getElementById("submit");
+  const fn = document.getElementById("fname");
+  
+  sum.addEventListener('click', () => {
+    if (fn.value.trim() === "") {
+      document.getElementById('fname_error').innerHTML = "say error";
+    } else {
+      document.getElementById('fname_error').innerHTML = ""; // clear error
+    }
+  });
+}
+contactForm();
