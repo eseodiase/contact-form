@@ -82,6 +82,10 @@
       text-align: var(--left-align);
     }
     
+    .f_n_l{
+      position: relative;
+    }
+    
     #fname, #lname{
       border: var(--border-line);
       width: 15.22rem;
@@ -174,7 +178,7 @@
   }
   
   #checkbox_error{
-    margin-block-start: -0.9375rem;
+    margin-block-start: -0.56rem;
     margin-block-end: 1.875rem;
   }
   
