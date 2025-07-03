@@ -72,6 +72,7 @@ let cErr = document.getElementById('checkbox_error');
 
 // submit form
  else {
+   // success state
     document.getElementById('success').innerHTML = `    <div class="success_inner">
     <p class="success-text-1">
       <span class="success-icon"></span>
