@@ -1,6 +1,6 @@
-
 function contactForm() {
-  const sum = document.getElementById("submit");
+  // variables for form inputs & button
+const sum = document.getElementById("submit");
 const fn = document.getElementById("fname");
 const ln = document.getElementById("lname");
 const em = document.getElementById("email");
@@ -9,9 +9,55 @@ const sp = document.getElementById("support");
 const ms = document.getElementById("message");
 const ck = document.getElementById("check");
 const sus = document.getElementById("success");
+
+// variables for erorr container
+let fErr = document.getElementById('fname_error');
+let nErr = document.getElementById('lname_error');
+let eErr = document.getElementById('email_error');
+let mErr = document.getElementById('message_error');
+let qErr = document.getElementById('query_type_error');
+let cErr = document.getElementById('checkbox_error');
+
   
   
   sum.addEventListener('click', (e) => {
+// first name error text
+    if (
+  fn.value === "") {
+  fErr.innerHTML = "This field is required";
+}
+
+// last name error text
+    if (
+  ln.value === "") {
+  nErr.innerHTML = "This field is required";
+}
+
+// email error text
+    if (
+  em.value === "") {
+  eErr.innerHTML = "This field is required";
+}
+
+// query type error text
+    if (
+  gn.checked === false && sp.checked === false) {
+  qErr.innerHTML = "Please select a query type";
+}
+
+// message error text
+    if (
+  ms.value === "") {
+  mErr.innerHTML = "This field is required";
+}
+
+// checkbox error text
+    if (
+  ck.checked === false) {
+  cErr.innerHTML = "To submit this form, please consent to being contacted";
+}
+
+// prevent form submission
     if (
   fn.value === "" ||
   ln.value === "" ||
@@ -23,7 +69,9 @@ const sus = document.getElementById("success");
 ) {
   e.preventDefault();
 }
-    else {
+
+// submit form
+ else {
     document.getElementById('success').innerHTML = `    <div class="success_inner">
     <p class="success-text-1">
       <span class="success-icon"></span>
@@ -34,7 +82,6 @@ const sus = document.getElementById("success");
   document.querySelector('.wrapper').style.marginTop = "7.8rem";
     }
 })
-
 
   };
 contactForm();
