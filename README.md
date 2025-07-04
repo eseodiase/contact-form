@@ -55,11 +55,11 @@ Building this form proves to be more challenging than how it actually looks. How
 
 How to:  
 
-Prevent browser form validation
-Stop submission if fields are empty.  
-Validates emails properly.  
-Makes sure checkboxes are checked.  
-Shows helpful errors without reloading.  
+- Prevent browser form validation.
+- Stop submission if fields are empty.  
+- Validates emails properly.  
+- Makes sure checkboxes are checked.  
+- Shows helpful errors without reloading.  
 
 ```js
 // email format validation
@@ -79,7 +79,7 @@ In the future, I would like to implement more advanced JavaScript techniques.
 
 - [Spck Editor Documentation](https://spck.io/docs) - Essential for mobile development setup
 - [Screenfly](https://screenfly.org) - Useful for responsive testing without multiple devices
-- [w3schools](https://w3schools.com) - Useful for custom checkbox and some other css styling and more
+- [w3schools] (https://w3schools.com) - Useful for custom checkbox and some other css styling and more
 
 ## Author
 

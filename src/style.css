@@ -10,7 +10,7 @@
     --border-line: 1px solid hsl(186, 15%, 59%);
     --light-grey: hsl(186, 15%, 59%);
     --dark-grey: hsl(187, 24%, 22%);
-    --font-karla: 'Karla' Sans-Serif;
+    --font-karla: Karla-VariableFont_wght.ttf;
     --left-align: left;
     --hover-color: 0.3px solid hsl(169, 82%, 27%);
     --button-bg: hsl(169, 82%, 27%);
