@@ -22,18 +22,33 @@
     --success-font-1: 0.875rem;
     --success-font-2: 0.75rem;
   }
-  
+ 
+ /* Static font setup */ 
 @font-face {
   font-family: 'Karla';
-  src: url('challenge_files/Karla-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 800; /* Range of weights available */
+  src: url('fonts/static/Karla-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Karla';
-  src: url('challenge_files/Karla-Italic-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 800;
+  src: url('fonts/static/Karla-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/static/Karla-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/static/Karla-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
   font-style: italic;
 }
 
