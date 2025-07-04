@@ -19,7 +19,7 @@ let qErr = document.getElementById('query_type_error');
 let cErr = document.getElementById('checkbox_error');
 
   
-  
+// event handler  
   sum.addEventListener('click', (e) => {
 // first name error text
     if (
@@ -57,7 +57,7 @@ let cErr = document.getElementById('checkbox_error');
   cErr.innerHTML = "To submit this form, please consent to being contacted";
 }
 
-// prevent form submission
+// prevent form submission if any of the input requirements is not fulfilled
     if (
   fn.value === "" ||
   ln.value === "" ||
@@ -70,9 +70,18 @@ let cErr = document.getElementById('checkbox_error');
   e.preventDefault();
 }
 
-// submit form
- else {
-   // success state
+// prevent form submission if email format is invalid
+    else if (
+  !em.value.includes("@") ||
+  !em.value.includes(".")
+) {
+  eErr.innerHTML = "Email must include '@' and end with '.'";
+  e.preventDefault();
+}
+
+// submits the form
+    else {
+   // success state display
     document.getElementById('success').innerHTML = `    <div class="success_inner">
     <p class="success-text-1">
       <span class="success-icon"></span>
