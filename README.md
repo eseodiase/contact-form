@@ -32,11 +32,11 @@ Users should be able to:
 
 ### Screenshots
 
-[Desktop View](./src/solution_files/screenshots/desktop_view.jpg)
-[Mobile View](./src/solution_files/screenshots/mobile_view.jpg)
-[Hover and Focus](./src/solution_files/screenshots/hover_&_focus.jpg)
-[Error State](./src/solution_files/screenshots/error_state.jpg)
-[Success State](./src/solution_files/screenshots/success_state.jpg)
+- [Desktop View](./src/solution_files/screenshots/desktop_view.jpg)
+- [Mobile View](./src/solution_files/screenshots/mobile_view.jpg)
+- [Hover and Focus](./src/solution_files/screenshots/hover_&_focus.jpg)
+- [Error State](./src/solution_files/screenshots/error_state.jpg)
+- [Success State](./src/solution_files/screenshots/success_state.jpg)
 
 ### Links
 
