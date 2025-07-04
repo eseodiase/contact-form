@@ -6,7 +6,7 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -30,14 +30,18 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+[Desktop View](./src/solution_files/screenshots/desktop_view.jpg)
+[Mobile View](./src/solution_files/screenshots/mobile_view.jpg)
+[Hover and Focus](./src/solution_files/screenshots/hover_&_focus.jpg)
+[Error State](./src/solution_files/screenshots/error_state.jpg)
+[Success State](./src/solution_files/screenshots/success_state.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/eseodiase/contact-form)
+- [Live Site URL](https://eseodiase.github.io/contact-form/)
 
 ## My process
 
@@ -58,8 +62,9 @@ How to:
 - Prevent browser form validation.
 - Stop submission if fields are empty.  
 - Validates emails properly.  
-- Makes sure checkboxes are checked.  
-- Shows helpful errors without reloading.  
+- Make sure either one of the checkboxes is checked.  
+- Show helpful errors without reloading.
+- Setup font locally within a project.
 
 ```js
 // email format validation
@@ -73,13 +78,13 @@ else if (
 
 ### Continued development
 
-In the future, I would like to implement more advanced JavaScript techniques.
+In the future, I would like to implement more advanced CSS, and JavaScript techniques.
 
 ### Useful resources
 
 - [Spck Editor Documentation](https://spck.io/docs) - Essential for mobile development setup
 - [Screenfly](https://screenfly.org) - Useful for responsive testing without multiple devices
-- [w3schools] (https://w3schools.com) - Useful for custom checkbox and some other css styling and more
+- [w3schools](https://w3schools.com) - Useful for custom checkbox and some other css styling and more
 
 ## Author
 
