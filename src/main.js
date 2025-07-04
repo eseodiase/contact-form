@@ -72,10 +72,9 @@ let cErr = document.getElementById('checkbox_error');
 
 // prevent form submission if email format is invalid
     else if (
-  !em.value.includes("@") ||
-  !em.value.includes(".")
+  !em.value.match(/^[^@]+@[^@]+\.[^@]+$/)
 ) {
-  eErr.innerHTML = "Email must include '@' and end with '.'";
+  eErr.innerHTML = "Please enter a valid email address";
   e.preventDefault();
 }
 
