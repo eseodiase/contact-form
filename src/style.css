@@ -1,3 +1,16 @@
+ /* Static font setup */
+@font-face {
+  font-family: 'Karla';
+  src: url('challenge_files/Karla-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('challenge_files/Karla-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
 /* CSS Variables */
   :root{
     --primary-a-color: hsl(228, 45%, 44%);
@@ -10,7 +23,6 @@
     --border-line: 1px solid hsl(186, 15%, 59%);
     --light-grey: hsl(186, 15%, 59%);
     --dark-grey: hsl(187, 24%, 22%);
-    --font-karla: 'Karla' sans-serif;
     --left-align: left;
     --hover-color: 0.3px solid hsl(169, 82%, 27%);
     --button-bg: hsl(169, 82%, 27%);
@@ -22,41 +34,12 @@
     --success-font-1: 0.875rem;
     --success-font-2: 0.75rem;
   }
- 
- /* Static font setup */ 
-@font-face {
-  font-family: 'Karla';
-  src: url('fonts/static/Karla-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Karla';
-  src: url('fonts/static/Karla-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Karla';
-  src: url('fonts/static/Karla-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Karla';
-  src: url('fonts/static/Karla-BoldItalic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-}
 
   html, .body{
       margin: 0;
       padding: 0;
       background: var(--bg-color);
-      font-family: var(--font-karla);
+      font-family: 'Karla', sans-serif;
     }
     
     .wrapper{
