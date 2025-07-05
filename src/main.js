@@ -90,7 +90,54 @@ let cErr = document.getElementById('checkbox_error');
   sus.style.display = "block";
   document.querySelector('.wrapper').style.marginTop = "7.8rem";
     }
-})
+});
+
+// Clear error message for first name
+    fn.addEventListener("input", function() {
+  if (fn.value.trim() !== "") {
+    fErr.innerHTML = "";
+  }
+});
+
+// Clear error message for last name
+    ln.addEventListener("input", function() {
+  if (ln.value.trim() !== "") {
+    nErr.innerHTML = "";
+  }
+});
+
+// Clear error message for email address
+    em.addEventListener("input", function () {
+  if (em.value.match(/^[^@]+@[^@]+\.[^@]+$/)) {
+    eErr.innerHTML = ""; 
+  }
+});
+
+// Clear error message for query type
+    gn.addEventListener("change", function() {
+  if (gn.checked) {
+    qErr.innerHTML = "";
+  }
+});
+    sp.addEventListener("change", function() {
+  if (sp.checked) {
+    qErr.innerHTML = "";
+  }
+});
+
+// Clear error message for textarea
+    ms.addEventListener("input", function() {
+  if (ms.value.trim() !== "") {
+    mErr.innerHTML = "";
+  }
+});
+
+// Clear error message for email address
+    ck.addEventListener("change", function() {
+  if (ck.checked) {
+    cErr.innerHTML = "";
+  }
+});
 
   };
 contactForm();
