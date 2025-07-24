@@ -1,15 +1,19 @@
- /* Static font setup */
-@font-face {
-  font-family: 'Karla';
-  src: url('challenge_files/Karla-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
+/* 
+  Author: Ese G. Odiase
+*/
 
-@font-face {
-  font-family: 'Karla';
-  src: url('challenge_files/Karla-Bold.ttf') format('truetype');
-  font-weight: 700;
-}
+/* Static font setup */
+  @font-face {
+    font-family: 'Karla';
+    src: url('challenge_files/Karla-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Karla';
+    src: url('challenge_files/Karla-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
 
 /* CSS Variables */
   :root{
@@ -35,7 +39,8 @@
     --success-font-2: 0.75rem;
   }
 
-  html, .body{
+/* Desktop-first workflow */
+    html, .body{
       margin: 0;
       padding: 0;
       background: var(--bg-color);
@@ -141,10 +146,10 @@
     }
  
     .query_border input:checked ~ .radio-icon {
-    border: none;
-    background-image: url("./challenge_files/icon-radio-selected.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+      border: none;
+      background-image: url("./challenge_files/icon-radio-selected.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
     }
     /*radio svg icon style end*/
     
@@ -168,30 +173,30 @@
     }
     
     .checkbox input {
-    opacity: 0;
-    position: absolute;
-    z-index: 999;
+      opacity: 0;
+      position: absolute;
+      z-index: 999;
   }
   
     .checkbox-icon {
-    height: 1.12rem;
-    width: 1.12rem;
-    border-radius: 0.1rem;
-    position: absolute;
-    background: transparent;
-    border: var(--border-line);
+      height: 1.12rem;
+      width: 1.12rem;
+      border-radius: 0.1rem;
+      position: absolute;
+      background: transparent;
+      border: var(--border-line);
   }
   
    .checkbox input:checked ~ .checkbox-icon {
-    border: none;
-    background-image: url("./challenge_files/icon-checkbox-check.svg");
-    background-repeat: no-repeat;
+      border: none;
+      background-image: url("./challenge_files/icon-checkbox-check.svg");
+      background-repeat: no-repeat;
   }
   
-  #checkbox_error{
-    margin-block-start: -0.56rem;
-    margin-block-end: 1.875rem;
-    letter-spacing: 0.0125em;
+    #checkbox_error{
+      margin-block-start: -0.56rem;
+      margin-block-end: 1.875rem;
+      letter-spacing: 0.0125em;
   }
   
     button{
@@ -237,7 +242,7 @@
     input[type=email]:hover,
     .query_border:hover,
     textarea:hover {
-    background: var(--bg-color);
+      background: var(--bg-color);
     }
     
     #fname_error,
@@ -290,39 +295,31 @@
       font-size: var(--success-font-2);
       }
       
-      #success .success_inner .success-icon{
-        background-image: url('./challenge_files/icon-success-check.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding-inline-end: 1.5rem;
+    #success .success_inner .success-icon{
+      background-image: url('./challenge_files/icon-success-check.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-inline-end: 1.5rem;
       }
-    
-    .attribution { 
-      text-align: center;
-      display: none;
-    }
-    
-    .attribution a { 
-      color: var(--primary-a-color);
-    }
   
-  @media (max-width: 789px){
+  /* Breakpoint for small devices */
+  @media (max-width: 48rem){
     .wrapper h2{
       margin-block-start: 0rem;
       margin-block-end: 2.5rem;
     }
     
-   .form-names, 
-   .query_border{
+    .form-names, 
+    .query_border{
      display: block;
      text-align: center;
    }
    
-      #fname, 
-      #lname, 
-      #email,
-      textarea,
-      button{
+    #fname, 
+    #lname, 
+    #email,
+    textarea,
+    button{
       width: var(--mobile-input-width);
       cursor: none;
     }
@@ -366,3 +363,12 @@
     }
     
   }
+  
+    .attribution {
+      text-align: center;
+      display: none;
+    }
+    
+    .attribution a {
+      color: var(--primary-a-color);
+    }
