@@ -48,6 +48,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
+- Accessibility
 - CSS custom properties
 - Flexbox
 - Desktop-first workflow (developed entirely on my mobile device)
