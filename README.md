@@ -50,7 +50,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Mobile-first workflow (developed entirely on mobile device)
+- Desktop-first workflow (developed entirely on my mobile device)
 
 
 ### What I learned
