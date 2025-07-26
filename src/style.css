@@ -261,7 +261,7 @@
       font-size: var(--success-font-2);
     }    
     
-    #success{
+    #success_message{
       top: -6.8rem;
       height: 6.25rem;
       width: 100%;
@@ -270,7 +270,7 @@
       display: none;
     }
     
-    #success .success_inner{
+    #success_message .success_inner{
       margin-inline-start: 6.5rem;
       margin-inline-end: 6.5rem;
       padding-inline: 1.25rem;
@@ -280,22 +280,22 @@
       background: var(--dark-grey);
     }
     
-    #success .success_inner p{
+    #success_message .success_inner p{
      color: var(--button-color);
      letter-spacing: 0.0125em;
     }
     
-    #success .success_inner .success-text-1{
+    #success_message .success_inner .success-text-1{
       font-weight: 700;
       font-size: var(--success-font-1);
     }
     
-    #success .success_inner .success-text-2 {
+    #success_message .success_inner .success-text-2 {
       font-weight: 400;
       font-size: var(--success-font-2);
       }
       
-    #success .success_inner .success-icon{
+    #success_message .success_inner .success-icon{
       background-image: url('./challenge_files/icon-success-check.svg');
       background-repeat: no-repeat;
       background-size: contain;
@@ -353,11 +353,11 @@
       margin-block-start: 0.625rem;
     }
     
-    #success {
+    #success_message {
      top: -7.6rem;
     }
     
-    #success .success_inner {
+    #success_message .success_inner {
       margin-inline-start: 3rem;
       margin-inline-end: 3rem;
     }

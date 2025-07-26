@@ -8,7 +8,6 @@ const gn = document.getElementById("general");
 const sp = document.getElementById("support");
 const ms = document.getElementById("message");
 const ck = document.getElementById("check");
-const sus = document.getElementById("success");
 
 // variables for erorr container
 let fErr = document.getElementById('fname_error');
@@ -17,6 +16,7 @@ let eErr = document.getElementById('email_error');
 let mErr = document.getElementById('message_error');
 let qErr = document.getElementById('query_type_error');
 let cErr = document.getElementById('checkbox_error');
+let sus = document.getElementById("success_message");
 
   
 // event handler  
@@ -81,7 +81,7 @@ let cErr = document.getElementById('checkbox_error');
 // submits the form
     else {
    // success state display
-    document.getElementById('success').innerHTML = `    <div class="success_inner">
+    document.getElementById('success_message').innerHTML = `    <div class="success_inner">
     <p class="success-text-1">
       <span class="success-icon"></span>
       Message Sent!</p>
