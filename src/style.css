@@ -3,20 +3,20 @@
 */
 
 /* Static font setup */
-  @font-face {
+@font-face {
     font-family: 'Karla';
     src: url('challenge_files/Karla-Regular.ttf') format('truetype');
     font-weight: 400;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'Karla';
     src: url('challenge_files/Karla-Bold.ttf') format('truetype');
     font-weight: 700;
-  }
+}
 
 /* CSS Variables */
-  :root{
+:root {
     --primary-a-color: hsl(228, 45%, 44%);
     --body-paragraph: 1rem;
     --bg-color: hsl(148, 38%, 91%);
@@ -37,338 +37,342 @@
     --error-color: hsl(0, 66%, 54%);
     --success-font-1: 0.875rem;
     --success-font-2: 0.75rem;
-  }
+}
 
 /* Desktop-first workflow */
-    html, .body{
-      margin: 0;
-      padding: 0;
-      background: var(--bg-color);
-      font-family: 'Karla', sans-serif;
+html,
+.body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    font-family: 'Karla', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper h1 {
+    display: none;
+}
+
+.wrapper h2 {
+    font-weight: 700;
+    color: var(--dark-grey);
+    text-align: var(--left-align);
+}
+
+.container {
+    max-width: 46.875rem;
+    max-height: 85rem;
+    text-align: center;
+    background: var(--container-bg-color);
+    border-radius: 20px;
+    margin: var(--container-margin);
+    padding: var(--container-padding);
+    box-shadow: var(--container-box-shadow);
+    -webkit-box-shadow: var(--container-box-shadow);
+    -moz-box-shadow: var(--container-box-shadow);
+    font-size: var(--body-paragraph);
+    position: relative;
+}
+
+.container .asterisk {
+    font-size: var(--asterisk-size);
+    color: var(--button-bg);
+    margin-inline-start: 0.6rem;
+}
+
+label,
+.fname-label,
+.lname-label,
+.email-label,
+.message-label,
+.checkbox,
+.container p {
+    font-weight: 400;
+    color: var(--dark-grey);
+    text-align: var(--left-align);
+}
+
+.form-names,
+.query_border {
+    display: inline-block;
+    text-align: var(--left-align);
+}
+
+#first_name,
+#last_name {
+    border: var(--border-line);
+    width: 15.22rem;
+}
+
+#email {
+    border: var(--border-line);
+    width: 31.25rem;
+}
+
+.query-heading {
+    text-align: var(--left-align);
+}
+
+.query_border {
+    border: var(--border-line);
+    width: 14.16rem;
+    padding-inline-start: 1.44rem;
+}
+
+/*radio svg icon style start*/
+.query_border input {
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+}
+
+.query_border .radio-icon {
+    height: 1.122rem;
+    width: 1.122rem;
+    border-radius: 50px;
+    margin-inline-start: 0.1875rem;
+    margin-block-start: 0.75rem;
+    position: absolute;
+    background: transparent;
+    border: var(--border-line);
+}
+
+.query_border label {
+    margin-inline-start: 1.875rem;
+    line-height: var(--radio-label-height);
+}
+
+.query_border input:checked~.radio-icon {
+    border: none;
+    background-image: url("./challenge_files/icon-radio-selected.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*radio svg icon style end*/
+
+textarea {
+    border: var(--border-line);
+    width: 31.25rem;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    height: 6.25rem;
+}
+
+.checkbox {
+    margin-block-start: 1.875rem;
+    margin-block-end: 1.875rem;
+    cursor: pointer;
+}
+
+.checkbox label {
+    margin-inline-start: 2.5rem;
+}
+
+.checkbox input {
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+}
+
+.checkbox-icon {
+    height: 1.12rem;
+    width: 1.12rem;
+    border-radius: 0.1rem;
+    position: absolute;
+    background: transparent;
+    border: var(--border-line);
+}
+
+.checkbox input:checked~.checkbox-icon {
+    border: none;
+    background-image: url("./challenge_files/icon-checkbox-check.svg");
+    background-repeat: no-repeat;
+}
+
+#checkbox_error {
+    margin-block-start: -0.56rem;
+    margin-block-end: 1.875rem;
+    letter-spacing: 0.0125em;
+}
+
+button {
+    width: 31.25rem;
+    background: var(--button-bg);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    height: 3.44rem;
+    border-radius: 8px;
+    outline: none;
+}
+
+button:hover {
+    background: var(--dark-grey);
+}
+
+input {
+    cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+.query_border {
+    height: 3rem;
+    border-radius: 8px;
+    outline: none;
+}
+
+input[type=radio] {
+    margin-block-start: 0.875rem;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+.query_border:hover,
+textarea:hover {
+    outline: var(--hover-color);
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+.query_border:hover,
+textarea:hover {
+    background: var(--bg-color);
+}
+
+#first_name_error,
+#last_name_error {
+    color: var(--error-color);
+    margin-block-start: 0rem;
+    position: absolute;
+    font-size: var(--success-font-2);
+}
+
+#email_error,
+#query_type_error,
+#message_error,
+#checkbox_error {
+    color: var(--error-color);
+    font-size: var(--success-font-2);
+}
+
+#success_message {
+    top: -6.8rem;
+    height: 6.25rem;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    display: none;
+}
+
+#success_message .success_inner {
+    margin-inline-start: 6.5rem;
+    margin-inline-end: 6.5rem;
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem;
+    border-radius: 8px;
+    text-align: center;
+    background: var(--dark-grey);
+}
+
+#success_message .success_inner p {
+    color: var(--button-color);
+    letter-spacing: 0.0125em;
+}
+
+#success_message .success_inner .success-text-1 {
+    font-weight: 700;
+    font-size: var(--success-font-1);
+}
+
+#success_message .success_inner .success-text-2 {
+    font-weight: 400;
+    font-size: var(--success-font-2);
+}
+
+#success_message .success_inner .success-icon {
+    background-image: url('./challenge_files/icon-success-check.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-inline-end: 1.5rem;
+}
+
+/* Breakpoint for small devices */
+@media (max-width: 48rem) {
+    .wrapper h2 {
+        margin-block-start: 0rem;
+        margin-block-end: 2.5rem;
     }
-    
-    .wrapper{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+
+    .form-names,
+    .query_border {
+        display: block;
+        text-align: center;
     }
-    
-    .wrapper h1{
-      display: none;
-    }
-    
-    .wrapper h2{
-      font-weight: 700;
-      color: var(--dark-grey);
-      text-align: var(--left-align);
-    }
-    
-    .container{
-      max-width: 46.875rem;
-      max-height: 85rem;
-      text-align: center;
-      background: var(--container-bg-color);
-      border-radius: 20px;
-      margin: var(--container-margin);
-      padding: var(--container-padding);
-      box-shadow: var(--container-box-shadow);
-      -webkit-box-shadow: var(--container-box-shadow);
-      -moz-box-shadow: var(--container-box-shadow);
-      font-size: var(--body-paragraph);
-      position: relative;
-    }
-    
-    .container .asterisk{
-      font-size: var(--asterisk-size);
-      color: var(--button-bg);
-      margin-inline-start: 0.6rem;
-    }
-    
-    label, 
-    .fname-label,
-    .lname-label,
-    .email-label,
-    .message-label,
-    .checkbox,
-    .container p{
-      font-weight: 400;
-      color: var(--dark-grey);
-      text-align: var(--left-align);
-    }
-    
-    .form-names, .query_border{
-      display: inline-block;
-      text-align: var(--left-align);
-    }
-    
-    #first_name, #last_name{
-      border: var(--border-line);
-      width: 15.22rem;
-    }
-    
-    #email{
-      border: var(--border-line);
-      width: 31.25rem;
-    }
-    
-    .query-heading{
-      text-align: var(--left-align);
-    }
-    
-    .query_border{
-      border: var(--border-line);
-      width: 14.16rem;
-      padding-inline-start: 1.44rem;
-    }
-    
-    /*radio svg icon style start*/
-    .query_border input {
-      opacity: 0;
-      position: absolute;
-      z-index: 999;
-    }
- 
-    .query_border .radio-icon {
-      height: 1.122rem;
-      width: 1.122rem;
-      border-radius: 50px;
-      margin-inline-start: 0.1875rem;
-      margin-block-start: 0.75rem;
-      position: absolute;
-      background: transparent;
-      border: var(--border-line);
-    }
-    
-    .query_border label {
-      margin-inline-start: 1.875rem;
-      line-height: var(--radio-label-height);
-    }
- 
-    .query_border input:checked ~ .radio-icon {
-      border: none;
-      background-image: url("./challenge_files/icon-radio-selected.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-    /*radio svg icon style end*/
-    
-    textarea{
-      border: var(--border-line);
-      width: 31.25rem;
-      border-radius: 8px;
-      outline: none;
-      cursor: pointer;
-      height: 6.25rem;
-    }
-    
-    .checkbox{
-      margin-block-start: 1.875rem;
-      margin-block-end: 1.875rem;
-      cursor: pointer;
-    }
-    
-    .checkbox label {
-      margin-inline-start: 2.5rem;
-    }
-    
-    .checkbox input {
-      opacity: 0;
-      position: absolute;
-      z-index: 999;
-  }
-  
-    .checkbox-icon {
-      height: 1.12rem;
-      width: 1.12rem;
-      border-radius: 0.1rem;
-      position: absolute;
-      background: transparent;
-      border: var(--border-line);
-  }
-  
-   .checkbox input:checked ~ .checkbox-icon {
-      border: none;
-      background-image: url("./challenge_files/icon-checkbox-check.svg");
-      background-repeat: no-repeat;
-  }
-  
-    #checkbox_error{
-      margin-block-start: -0.56rem;
-      margin-block-end: 1.875rem;
-      letter-spacing: 0.0125em;
-  }
-  
-    button{
-      width: 31.25rem;
-      background: var(--button-bg);
-      color: var(--bg-color);
-      border: none;
-      cursor: pointer;
-      font-weight: 700;
-      height: 3.44rem;
-      border-radius: 8px;
-      outline: none;
-    }
-    
-    button:hover{
-      background: var(--dark-grey);
-    }
-    
-    input{
-      cursor: pointer;
-    }
-    
-    input[type=text],
-    input[type=email],
-    .query_border{
-      height: 3rem;
-      border-radius: 8px;
-      outline: none;
-    }
-    
-    input[type=radio]{
-      margin-block-start: 0.875rem;
-    }
-    
-    input[type=text]:hover,
-    input[type=email]:hover,
-    .query_border:hover,
-    textarea:hover{
-      outline: var(--hover-color);
-    }
-    
-    input[type=text]:hover,
-    input[type=email]:hover,
-    .query_border:hover,
-    textarea:hover {
-      background: var(--bg-color);
-    }
-    
-    #first_name_error,
-    #last_name_error{
-      color: var(--error-color);
-      margin-block-start: 0rem;
-      position: absolute;
-      font-size: var(--success-font-2);
-    }
-    
-    #email_error,
-    #query_type_error,
-    #message_error,
-    #checkbox_error{
-      color: var(--error-color);
-      font-size: var(--success-font-2);
-    }    
-    
-    #success_message{
-      top: -6.8rem;
-      height: 6.25rem;
-      width: 100%;
-      left: 0;
-      position: absolute;
-      display: none;
-    }
-    
-    #success_message .success_inner{
-      margin-inline-start: 6.5rem;
-      margin-inline-end: 6.5rem;
-      padding-inline: 1.25rem;
-      padding-block: 1.25rem;
-      border-radius: 8px;
-      text-align: center;
-      background: var(--dark-grey);
-    }
-    
-    #success_message .success_inner p{
-     color: var(--button-color);
-     letter-spacing: 0.0125em;
-    }
-    
-    #success_message .success_inner .success-text-1{
-      font-weight: 700;
-      font-size: var(--success-font-1);
-    }
-    
-    #success_message .success_inner .success-text-2 {
-      font-weight: 400;
-      font-size: var(--success-font-2);
-      }
-      
-    #success_message .success_inner .success-icon{
-      background-image: url('./challenge_files/icon-success-check.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      padding-inline-end: 1.5rem;
-      }
-  
-  /* Breakpoint for small devices */
-  @media (max-width: 48rem){
-    .wrapper h2{
-      margin-block-start: 0rem;
-      margin-block-end: 2.5rem;
-    }
-    
-    .form-names, 
-    .query_border{
-     display: block;
-     text-align: center;
-   }
-   
-    #first_name, 
-    #last_name, 
+
+    #first_name,
+    #last_name,
     #email,
     textarea,
-    button{
-      width: var(--mobile-input-width);
-      cursor: none;
+    button {
+        width: var(--mobile-input-width);
+        cursor: none;
     }
-    
-    input{
-      cursor: none;
+
+    input {
+        cursor: none;
     }
-    
-    .query_border{
-      border: var(--border-line);
-      width: 91.2%;
-      margin-block-end: 1.25rem;
-      text-align: var(--left-align);
-      cursor: none;
+
+    .query_border {
+        border: var(--border-line);
+        width: 91.2%;
+        margin-block-end: 1.25rem;
+        text-align: var(--left-align);
+        cursor: none;
     }
-    
-    textarea{
-      height: 15.625rem;
+
+    textarea {
+        height: 15.625rem;
     }
-    
-    .checkbox{
-      display: flex;
-      cursor: none;
+
+    .checkbox {
+        display: flex;
+        cursor: none;
     }
-    
+
     .checkbox input {
-      margin-block-start: 0.9rem;
+        margin-block-start: 0.9rem;
     }
-    
+
     .checkbox-icon {
-      margin-block-start: 0.625rem;
+        margin-block-start: 0.625rem;
     }
-    
+
     #success_message {
-     top: -7.6rem;
+        top: -7.6rem;
     }
-    
+
     #success_message .success_inner {
-      margin-inline-start: 3rem;
-      margin-inline-end: 3rem;
+        margin-inline-start: 3rem;
+        margin-inline-end: 3rem;
     }
-    
-  }
-  
-    .attribution {
-      text-align: center;
-      display: none;
-    }
-    
-    .attribution a {
-      color: var(--primary-a-color);
-    }
+
+}
+
+.attribution {
+    text-align: center;
+    display: none;
+}
+
+.attribution a {
+    color: var(--primary-a-color);
+}
