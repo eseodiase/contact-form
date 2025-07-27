@@ -1,17 +1,17 @@
 function contactForm() {
   // variables for form inputs & button
 const sum = document.getElementById("submit");
-const fn = document.getElementById("fname");
-const ln = document.getElementById("lname");
+const fn = document.getElementById("first_name");
+const ln = document.getElementById("last_name");
 const em = document.getElementById("email");
-const gn = document.getElementById("general");
-const sp = document.getElementById("support");
+const gn = document.getElementById("general_enquiry");
+const sp = document.getElementById("support_request");
 const ms = document.getElementById("message");
-const ck = document.getElementById("check");
+const ck = document.getElementById("terms");
 
 // variables for erorr container
-let fErr = document.getElementById('fname_error');
-let nErr = document.getElementById('lname_error');
+let fErr = document.getElementById('first_name_error');
+let nErr = document.getElementById('last_name_error');
 let eErr = document.getElementById('email_error');
 let mErr = document.getElementById('message_error');
 let qErr = document.getElementById('query_type_error');

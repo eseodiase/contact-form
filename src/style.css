@@ -82,7 +82,7 @@
     .container .asterisk{
       font-size: var(--asterisk-size);
       color: var(--button-bg);
-      margin-inline-start: 0.2rem;
+      margin-inline-start: 0.6rem;
     }
     
     label, 
@@ -102,7 +102,7 @@
       text-align: var(--left-align);
     }
     
-    #fname, #lname{
+    #first_name, #last_name{
       border: var(--border-line);
       width: 15.22rem;
     }
@@ -245,8 +245,8 @@
       background: var(--bg-color);
     }
     
-    #fname_error,
-    #lname_error{
+    #first_name_error,
+    #last_name_error{
       color: var(--error-color);
       margin-block-start: 0rem;
       position: absolute;
@@ -315,8 +315,8 @@
      text-align: center;
    }
    
-    #fname, 
-    #lname, 
+    #first_name, 
+    #last_name, 
     #email,
     textarea,
     button{

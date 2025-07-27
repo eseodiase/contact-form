@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./challenge_files/favicon-32x32.png">
   
   <title>Frontend Mentor | Contact form</title>
@@ -11,89 +12,86 @@
   <!-- Custom style -->
   <link rel="stylesheet" href="./src/style.css">
 </head>
-<body>
 
-<main class="wrapper">
-  <h1 class="heading" aria-hidden="true">Contact Form</h1>
+<body>
   
-  <form class="container" novalidate>
-    <h2 class="subheading"> Contact Us</h2>
+  <main class="wrapper">
+    <h1 class="heading" aria-hidden="true">Contact Form</h1>
     
-    <section class="names">
-    <div class="form-names">
-    <p class="fname-label">
-      <label for="first-name">First Name</label>
-    <b class="asterisk">&#x2a;</b>
-    </p>
-      <input type="text" id="fname" name="first_name" required>
-      <p id="fname_error" aria-live="polite"></p>
+    <form class="container" novalidate>
+      <h2 class="subheading"> Contact Us</h2>
+      
+      <div class="names">
+        <div class="form-names">
+          <p class="fname-label">
+            <label for="first_name">First Name<b class="asterisk">&#x2a;</b></label>
+          </p>
+          <input type="text" id="first_name" name="first_name" aria-describedby="first_name_error" required>
+          <p id="first_name_error" aria-live="polite"></p>
+        </div>
+        
+        <div class="form-names">
+          <p class="lname-label">
+            <label for="last_name">Last Name<b class="asterisk">&#x2a;</b></label>
+          </p>
+          <input type="text" id="last_name" name="last_name" aria-describedby="last_name_error" required>
+          <p id="last_name_error" aria-live="polite"></p>
+        </div>
+      </div>
+      
+      <div class="form-email">
+        <p class="email-label">
+          <label for="email">Email Address<b class="asterisk">&#x2a;</b></label>
+        </p>
+        <input type="email" id="email" name="email" aria-describedby="email_error" required>
+        <p id="email_error" aria-live="polite"></p>
+      </div>
+      
+      <div class="query-type">
+        <p class="query-heading">Query Type<b class="asterisk">&#x2a;</b>
+        </p>
+        <div class="query_border">
+          <input type="radio" id="general_enquiry" name="query_type" value="General Enquiry" aria-describedby="query_type_error" required>
+          <span class="radio-icon"></span>
+          <label for="general_enquiry">General Enquiry</label>
+        </div>
+        
+        <div class="query_border">
+          <input type="radio" id="support_request" name="query_type" value="Support Request" aria-describedby="query_type_error" required>
+          <span class="radio-icon"></span>
+          <label for="support_request">Support Request</label>
+        </div>
+        <p id="query_type_error" aria-live="polite"></p>
+      </div>
+      
+      <div class="form-message">
+        <p class="message-label"><label for="message">Message<b class="asterisk">&#x2a;</b></label>
+        </p>
+        <textarea id="message" name="Message" cols="30" rows="10" aria-describedby="message_error" required></textarea>
+        <p id="message_error" aria-live="polite"></p>
+      </div>
+      
+      <div class="check-section">
+        <div class="checkbox">
+          <input type="checkbox" id="terms" name="terms" value="I consent to being contacted by the team" aria-describedby="checkbox_error" required>
+          <span class="checkbox-icon"></span>
+          <label for="terms">I consent to being contacted by the team<b class="asterisk">&#x2a;</b></label>
+        </div>
+        <p id="checkbox_error" aria-live="polite"></p>
+      </div>
+      
+      <button type="submit" id="submit" aria-label="submit form" aria-describedby="success_message">Submit</button>
+      
+      <div id="success_message" aria-live="polite"></div>
+    </form>
+    
+    <div class="attribution" aria-hidden="true">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>
+      Coded by <a href="#">Ese G. Odiase</a>
     </div>
-    
-    <div class="form-names">
-    <p class="lname-label">
-      <label for="last-name">Last Name</label>
-    <b class="asterisk">&#x2a;</b>
-    </p>
-      <input type="text" id="lname" name="last_name" required>
-      <p id="lname_error" aria-live="polite"></p>
-    </div>
-    </section>
-    
-    <section class="form-email">
-    <p class="email-label">
-      <label for="email">Email Address</label>
-    <b class="asterisk">&#x2a;</b>
-    </p>
-      <input type="email" id="email" name="email" required>
-      <p id="email_error" aria-live="polite"></p>
-    </section>
-    
-    <section class="query-type">
-    <p class="query-heading">Query Type
-     <b class="asterisk">&#x2a;</b>
-     </p>  
-    <div class="query_border">
-    <input type="radio" id="general" name="query_type" value="General Enquiry" required>
-    <span class="radio-icon"></span>
-    <label for="general-enquiry">General Enquiry</label>
-    </div>
-    
-    <div class="query_border">
-    <input type="radio" id="support" name="query_type" value="Support Request" required>
-    <span class="radio-icon"></span>
-    <label for="support-request">Support Request</label>
-    </div>
-    <p id="query_type_error" aria-live="polite"></p>
-    </section>
-    
-    <section class="form-message">
-    <p class="message-label"><label for="message">Message</label>
-    <b class="asterisk">&#x2a;</b>
-    </p>
-    <textarea id="message" name="Message" cols="30" rows="10" required></textarea>
-    <p id="message_error" aria-live="polite"></p>
-    </section>
-    
-    <section class="check-section">
-    <div class="checkbox">
-    <input type="checkbox" id="check" name="Consent" value="I consent to being contacted by the team" required>
-    <span class="checkbox-icon"></span>
-    <label sfor="terms">I consent to being contacted by the team <b class="asterisk">&#x2a;</b></label> 
-    </div>
-    <p id="checkbox_error" aria-live="polite"></p>
-    </section>
-    
-    <button type="submit" id="submit" aria-label="submit form" aria-describedby="success_message">Submit</button>
-    
-    <section id="success_message" aria-live="polite"></section>
-  </form>
-  
-  <article class="attribution" aria-hidden="true">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>
-    Coded by <a href="#">Ese G. Odiase</a>
-  </article>
   </main>
   
   <script src="./src/main.js"></script>
 </body>
+
 </html>
