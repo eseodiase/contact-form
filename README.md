@@ -51,6 +51,7 @@ Users should be able to:
 - Accessibility
 - CSS custom properties
 - Flexbox
+- Vanilla JavaScript
 - Desktop-first workflow (developed entirely on my mobile device)
 
 
@@ -89,5 +90,5 @@ In the future, I would like to implement more advanced CSS, and JavaScript techn
 
 ## Author
 
+- LinkedIn - [Ese Odiase](https://ng.linkedin.com/in/ese-g-odiase-220576196)
 - Frontend Mentor - [@eseodiase](https://www.frontendmentor.io/profile/eseodiase)
-```

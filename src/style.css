@@ -1,5 +1,5 @@
 /* 
-  Author: Ese G. Odiase
+  Author: Ese Odiase
 */
 
 /* Static font setup */
@@ -15,26 +15,28 @@
     font-weight: 700;
 }
 
-/* CSS Variables */
+/* CSS custom properties */
 :root {
-    --primary-a-color: hsl(228, 45%, 44%);
-    --body-paragraph: 1rem;
-    --bg-color: hsl(148, 38%, 91%);
-    --container-bg-color: hsl(0, 0%, 100%);
-    --container-box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.0477);
     --container-margin: 0.625rem;
     --container-padding: 1.5625rem;
-    --border-line: 1px solid hsl(186, 15%, 59%);
+    --left-align: left;
+    --mobile-input-width: 98%;
+    --radio-label-height: 2.8125rem;
+    /* colors */
+    --bg-color: hsl(148, 38%, 91%);
+    --container-bg-color: hsl(0, 0%, 100%);
     --light-grey: hsl(186, 15%, 59%);
     --dark-grey: hsl(187, 24%, 22%);
-    --left-align: left;
-    --hover-color: 0.3px solid hsl(169, 82%, 27%);
     --button-bg: hsl(169, 82%, 27%);
     --button-color: hsl(0, 0%, 100%);
-    --mobile-input-width: 98%;
-    --asterisk-size: 0.65rem;
-    --radio-label-height: 2.8125rem;
     --error-color: hsl(0, 66%, 54%);
+    --primary-a-color: hsl(228, 45%, 44%);
+    --hover-color: 0.3px solid hsl(169, 82%, 27%);
+    --border-line: 1px solid hsl(186, 15%, 59%);
+    --container-box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.0477);
+    /* font sizes */
+    --body-paragraph: 1rem;
+    --asterisk-size: 0.65rem;
     --success-font-1: 0.875rem;
     --success-font-2: 0.75rem;
 }
@@ -48,15 +50,15 @@ html,
     font-family: 'Karla', sans-serif;
 }
 
+header{
+  display: none;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-}
-
-.wrapper h1 {
-    display: none;
 }
 
 .wrapper h2 {
@@ -154,7 +156,6 @@ label,
     background-repeat: no-repeat;
     background-size: contain;
 }
-
 /*radio svg icon style end*/
 
 textarea {
